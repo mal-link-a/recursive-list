@@ -50,7 +50,7 @@ export const RecursiveList = ({nesting, index, deleteItem}: Props) => {
             <Button $hide = {!deleteItem} onClick={deleteBlock}>Удалить этот</Button>
             </HStack>            
             <List $isHollow = {!items.length} $color={getColor(nesting)}>
-                {items.map((item, i)=> <RecursiveList nesting={nesting + 1} index={i} deleteItem={deleteChild} />)}
+                {items.map((item, i)=> <RecursiveList key = {`${nesting}+ ${i}`} nesting={nesting + 1} index={i} deleteItem={deleteChild} />)}
             </List>            
         </Container>
     )

@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import styled from "styled-components";
 import { RecursiveList } from "./features/RecursiveList/ui/RecursiveList";
